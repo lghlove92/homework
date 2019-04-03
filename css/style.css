@@ -44,13 +44,6 @@ table {
 *, *::before, *::after{
     box-sizing: border-box;
 }
-/* 기본 스타일 */
-
-.visual{
-	position:relative;
-}
-
-
 .list-language {
 
     width: 110px; /* 원하는 너비설정 */
@@ -70,14 +63,105 @@ a{
     color: inherit;
     text-decoration: none;
 }
-/* li 패딩 */
-.menu-item-text{
-	padding: 0 40px;
+.container {
+	background: #c8c8c8;
 }
-.menu-item ul li{
-	padding: 0 15px;
+.header {
+	background: yellow;
+    position: relative;
+    padding: 30px 0;
+}
+.header-container{
+	padding: 0 40;
+	margin: 0 auto;
+	width: 1120px;
+}
+.menu-item{
+    float: left;
+}
+.logo {
+    position: absolute;
+    top: 18px;
+}
+.navigation {
+    position: relative;
+    left: 200px;
+    line-height: middle;
+}
+.menu {
+
+}
+.menu::after{
+    content: "";
+    clear: both;
+    display:block;
+
+}
+.menu-item {
+    padding: 0 30px;
+}
+.menu-item:hover .sub-menu{
+	display: block;
+}
+.menu-item-text {
+}
+.sub-menu {
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: #999;
+	top: 50px;
+	z-index: 10;
+    color: red;
+    
+}
+/* .sub-menu-bg{
+    position: absolute;
+    display:none;
+    width: 100%;
+    height: 100px;
+    top: 50px;
+    background: #999;
+    z-index: 10;
+	color: red;
+} */
+.sub-menu-item-text {
+}
+.sm-sub-menu {
+    display:none;
 }
 
+.n01 {
+    left: -200px;
+    /* vertical-align: middle; */
+}
+.n02 {
+    left: -200px;
+}
+.n03 {
+    left: -200px;
+}
+.n04 {
+    left: -200px;
+}
+.sub-menu li{
+    float: left;
+    padding : 0 20px;
+}
+.headersub-menu {
+    /* float: left; */
+    position: absolute;
+    left: 1000px;
+    top: 23px;
+}
+.sitemap {
+    padding: 0 20px;
+}
+.list-language {
+}
+.visual {
+}
 .visual-iframe{
 	width: 100%;
 	height: 500px;
@@ -91,79 +175,24 @@ a{
 	text-align: center;
 	/* display: block; */
 }
-
-
-.container {
-	background: #c8c8c8;
+.visual-main-text {
+    color: white;
+    font: 50px bold;
+    margin-bottom: 20px;
 }
-.header {
-	background: yellow;
-	
-}
-.header-container{
-	padding: 0 40;
-	margin: 0 auto;
-	width: 1120px;
-}
-.logo {
-	position: absolute;
-	margin-top: 20px;
-    width: 70px;
-    height: 25px;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-}
-.navigation {
-	display: inline-block;
-}
-
-.menu-item {
-	display: inline-block;
-	position: relative;	
-	left: 70px;
-	top:-30px;
-}
-.menu-item:hover .sub-menu{
-	display: block;
-}
-.menu-item-text {
+.visual-main-button {
+    width: 110px; /* 원하는 너비설정 */
+    padding: 4px 20px; /* 여백으로 높이 설정 */
+    font-family: inherit;  /* 폰트 상속 */
+    border: 1px solid #999;
+    /* border-radius: 0px; iOS 둥근모서리 제거 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+	border-radius: 20px;
+    outline:none;
+    font: 20px bold;
+    color:white;
 
 }
-.sub-menu {
-	position: absolute;
-	display: none;
-	width: 700px;
-	top: 50px;
-	z-index: 10;
-	color: red;
-}
-.n01{
-	left: -230px;
-}
-.n02{
-	left:-30px;
-}
-.n03{
-	left:-182px;
-}
-.n04{
-	left:-50px;
-}
-.sub-menu li{
-	display: inline;
-}
-.sub-menu-item-text {
-}
-.sm-sub-menu {
-	display:none;
-}
-.headersub-menu {
-	display: inline-block;
-	float: right;
-	padding: 20px 0;
-}
-.sitemap {
-}
-.list-language {
-}
+
