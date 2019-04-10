@@ -73,7 +73,8 @@ a{
 }
 
 .header, .news, .business-info, .footer{
-    width: 1200px;
+    width: 1120px;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
@@ -154,7 +155,6 @@ a{
     top: 90px;
     left: 50%;
     transform: translateX(-50%);
-    /* overflow: hidden;  */
     background: yellow;
     white-space: nowrap;
     display: none;
