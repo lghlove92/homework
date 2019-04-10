@@ -83,24 +83,21 @@ a{
     background: orange;
 }
 .visual{
-    background: lime;
+    /* background: lime; */
     height: 30vh;
     display: none;
 }
 .news{
     background: silver;
     height: 30vh;
-    display: none;
 }
 .business-info{
     background: teal;
     height: 20vh;
-    display: none;
 }
 .footer{
     background: coral;
     height: 10vh;
-    display: none;
 }
 
 /* 헤더 */
@@ -138,6 +135,7 @@ a{
     display: block;
     line-height: 90px;
     padding: 0 30px;
+    cursor: pointer;
     /* 글자 굵게 바꾸는거 */
     /* font-weight: 700; */
 }
@@ -155,7 +153,6 @@ a{
     top: 90px;
     left: 50%;
     transform: translateX(-50%);
-    background: yellow;
     white-space: nowrap;
     display: none;
     font-size: 0.9rem;
